@@ -1,0 +1,20 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'com.spectra.v2bpverify.Main'
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'http://dl.bintray.com/spectralogic/ds3'
+    }
+}
+
+dependencies {
+    compile 'com.spectralogic.ds3:ds3-sdk:3.2.2'
+    compile 'com.google.guava:guava:19.0'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.0'
+}
