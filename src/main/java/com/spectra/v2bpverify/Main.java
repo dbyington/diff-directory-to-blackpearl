@@ -1,20 +1,15 @@
 package com.spectra.v2bpverify;
 
-import com.google.common.collect.ImmutableSet;
-import com.google.common.collect.Sets;
 import com.spectralogic.ds3client.Ds3Client;
 import com.spectralogic.ds3client.Ds3ClientBuilder;
 import com.spectralogic.ds3client.helpers.Ds3ClientHelpers;
 import com.spectralogic.ds3client.models.Contents;
-import com.spectralogic.ds3client.models.SystemFailure;
 import com.spectralogic.ds3client.models.bulk.Ds3Object;
 
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.function.Consumer;
-import java.util.stream.Stream;
 
 public class Main {
     public static void main(final String[] args) throws IOException {
@@ -33,7 +28,7 @@ public class Main {
 
         System.out.println("Comparing...");
         difference(localSet, bpDs3Objects);
-        
+
         if (localSet.isEmpty()) {
             System.out.println("No differences");
         } else {
