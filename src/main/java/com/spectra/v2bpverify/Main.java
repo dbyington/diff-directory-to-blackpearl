@@ -39,7 +39,7 @@ public class Main {
             System.out.println("No differences");
         } else {
             System.out.println("Found differences:");
-            localSet.forEach(ds3Object -> System.out.println("File: " + ds3Object.getName()));
+            localSet.forEach(ds3Object -> System.out.println("Object: " + System.getenv("DS3_ENDPOINT") + "://" + args[1] + "/" + ds3Object.getName().replace("\\", "/") + " does not exist."));
         }
     }
 
