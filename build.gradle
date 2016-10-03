@@ -3,7 +3,7 @@ apply plugin: 'application'
 
 version = '1.0.1'
 
-mainClassName = 'com.spectra.v2bpverify.Main'
+mainClassName = 'com.spectra.diffDirectoryToBlackpearl.Main'
 
 repositories {
     mavenCentral()

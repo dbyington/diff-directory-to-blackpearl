@@ -1,4 +1,4 @@
-package com.spectra.v2bpverify;
+package com.spectra.diffDirectoryToBlackpearl;
 
 import com.spectralogic.ds3client.Ds3Client;
 import com.spectralogic.ds3client.Ds3ClientBuilder;
